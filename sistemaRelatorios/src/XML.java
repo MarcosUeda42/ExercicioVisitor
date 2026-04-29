@@ -15,4 +15,8 @@ public class XML extends Relatorio {
         v.gerarHTML(this);
     }
 
+    public void acceptXML(Visitor v) {
+        v.gerarXML(this);
+    }
+
 }

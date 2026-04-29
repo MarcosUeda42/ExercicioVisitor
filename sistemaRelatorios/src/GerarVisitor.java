@@ -58,4 +58,24 @@ public class GerarVisitor implements Visitor {
     public void gerarHTML(XML xml) {
         System.out.println("Gerando HTML de " + xml.getDados() + ".xml");
     }
+
+    @Override
+    public void gerarXML(PDF pdf) {
+        System.out.println("Gerando XML de " + pdf.getDados() + ".pdf");
+}
+
+    @Override
+    public void gerarXML(Excel excel) {
+        System.out.println("Gerando XML de " + excel.getDados() + ".excel");
+    }
+
+    @Override
+    public void gerarXML(HTML html) {
+        System.out.println("Gerando XML de " + html.getDados() + ".html");
+    }
+
+    @Override
+    public void gerarXML(XML xml) {
+        System.out.println("Gerando XML de " + xml.getDados() + ".xml");
+    }
 }

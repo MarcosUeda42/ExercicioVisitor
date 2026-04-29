@@ -14,4 +14,8 @@ public class PDF extends Relatorio {
     public void acceptHTML(Visitor v) {
         v.gerarHTML(this);
     }
+
+    public void acceptXML(Visitor v) {
+        v.gerarXML(this);
+    }
 }

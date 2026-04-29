@@ -13,4 +13,9 @@ interface Visitor {
     public void gerarHTML(Excel excel);
     public void gerarHTML(HTML html);
     public void gerarHTML(XML xml);
+
+    public void gerarXML(PDF pdf);
+    public void gerarXML(Excel excel);
+    public void gerarXML(HTML html);
+    public void gerarXML(XML xml);
 } 
