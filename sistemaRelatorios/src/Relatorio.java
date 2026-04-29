@@ -9,5 +9,7 @@ abstract class Relatorio {
         return dados;
     }
 
-    abstract public void accept(Visitor v);
+    abstract public void acceptPDF(Visitor v);
+
+    abstract public void acceptExcel(Visitor v);
 }

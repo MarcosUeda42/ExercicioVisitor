@@ -3,7 +3,11 @@ public class PDF extends Relatorio {
         super(dados);
     }
     
-    public void accept(Visitor v) {
+    public void acceptPDF(Visitor v) {
         v.gerarPDF(this);
+    }
+
+    public void acceptExcel(Visitor v) {
+        v.gerarExcel(this);
     }
 }

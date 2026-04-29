@@ -11,9 +11,9 @@ public class App {
 
         GerarVisitor visitor = new GerarVisitor();
         
-        list.get(0).accept(visitor);
-        list.get(1).accept(visitor);
-        list.get(2).accept(visitor);    
-        list.get(3).accept(visitor);
+        list.get(0).acceptPDF(visitor);
+        list.get(1).acceptPDF(visitor);
+        list.get(2).acceptExcel(visitor);    
+        list.get(3).acceptExcel(visitor);
     }
 }
