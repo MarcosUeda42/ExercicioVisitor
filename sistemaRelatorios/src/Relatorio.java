@@ -12,4 +12,6 @@ abstract class Relatorio {
     abstract public void acceptPDF(Visitor v);
 
     abstract public void acceptExcel(Visitor v);
+
+    abstract public void acceptHTML(Visitor v);
 }

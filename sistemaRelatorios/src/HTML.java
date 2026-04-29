@@ -10,4 +10,8 @@ public class HTML extends Relatorio {
     public void acceptExcel(Visitor v) {
         v.gerarExcel(this);
     }
+
+    public void acceptHTML(Visitor v) {
+        v.gerarHTML(this);
+    }
 }
