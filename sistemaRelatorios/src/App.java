@@ -9,5 +9,11 @@ public class App {
         list.add(new HTML("Relatório de Clientes"));
         list.add(new XML("Relatório de Fornecedores"));
 
+        GerarVisitor visitor = new GerarVisitor();
+        
+        list.get(0).accept(visitor);
+        list.get(1).accept(visitor);
+        list.get(2).accept(visitor);    
+        list.get(3).accept(visitor);
     }
 }

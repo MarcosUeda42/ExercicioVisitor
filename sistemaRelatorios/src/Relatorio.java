@@ -8,4 +8,6 @@ abstract class Relatorio {
     public String getDados() {
         return dados;
     }
+
+    abstract public void accept(Visitor v);
 }
